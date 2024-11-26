@@ -23,14 +23,14 @@ class Config(RecBole_Config):
 
     def compatibility_settings(self):
         import numpy as np
-        np.bool = np.bool_
-        np.int = np.int_
-        np.float = np.float_
-        np.complex = np.complex_
-        np.object = np.object_
-        np.str = np.str_
+        np.bool = bool
+        np.int = int
+        np.float = float
+        np.complex = complex
+        np.object = object
+        np.str = str
         np.long = np.int_
-        np.unicode = np.unicode_
+        np.unicode = np.str_
 
     def _get_model_and_dataset(self, model, dataset):
 
